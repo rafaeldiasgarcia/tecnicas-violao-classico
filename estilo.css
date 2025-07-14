@@ -1,6 +1,4 @@
-/* ============================================= */
-/* ESTILOS GERAIS DA PÁGINA (CORPO)              */
-/* ============================================= */
+/* ESTILOS GERAIS DA PÁGINA (CORPO) */
 body {
     font-family: "Poppins", sans-serif;
     background-color: #FDFDFD;
@@ -9,18 +7,14 @@ body {
     line-height: 1.7;
 }
 
-/* ============================================= */
-/* ESTILOS DOS TÍTULOS (TIPOGRAFIA)              */
-/* ============================================= */
+/* ESTILOS DOS TÍTULOS (TIPOGRAFIA) */
 h1, h2, h3, h4, h5 {
     font-family: "Cormorant Garamond", serif;
     color: #8B4513;
     font-weight: 700;
 }
 
-/* ============================================= */
-/* CABEÇALHO PRINCIPAL (TELA DE ABERTURA)        */
-/* ============================================= */
+/* CABEÇALHO PRINCIPAL (TELA DE ABERTURA) */
 .cabecalho-principal {
     height: 100vh;
     display: flex;
@@ -41,9 +35,7 @@ h1, h2, h3, h4, h5 {
     color: #555;
 }
 
-/* ============================================= */
-/* INDICADOR DE ROLAGEM (SETA ANIMADA)           */
-/* ============================================= */
+/* INDICADOR DE ROLAGEM (SETA ANIMADA) */
 .indicador-rolagem {
     display: inline-block;
     position: relative;
@@ -79,9 +71,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-/* ============================================= */
-/* SEÇÕES DE CONTEÚDO (AS TÉCNICAS)              */
-/* ============================================= */
+/* SEÇÕES DE CONTEÚDO (AS TÉCNICAS) */
 .secao-tecnica {
     padding: 100px 50px;
     max-width: 800px;
@@ -149,9 +139,7 @@ ul li::before {
     margin-left: -1em;
 }
 
-/* ============================================= */
-/* RODAPÉ                                        */
-/* ============================================= */
+/* RODAPÉ */
 .rodape {
     text-align: center;
     padding: 20px;
@@ -159,9 +147,7 @@ ul li::before {
     color: #777;
 }
 
-/* ============================================= */
-/* PORTABILIDADE MOBILE (RESPONSIVO)             */
-/* ============================================= */
+/* PORTABILIDADE MOBILE (RESPONSIVO) */
 @media (max-width: 768px) {
     .cabecalho-principal h1 {
         font-size: 2.5rem;
