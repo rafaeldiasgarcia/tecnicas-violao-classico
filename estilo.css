@@ -1,0 +1,105 @@
+/* ============================================= */
+/* ESTILOS GERAIS DA PÁGINA (CORPO)              */
+/* ============================================= */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte para textos comuns */
+    background-color: #FDFDFD;
+    color: #333;
+    margin: 0;
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* ============================================= */
+/* ESTILOS DOS TÍTULOS (TIPOGRAFIA)              */
+/* ============================================= */
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif; /* Fonte elegante para títulos */
+    color: #8B4513; /* Cor de madeira */
+    font-weight: 700;
+}
+
+/* ============================================= */
+/* CABEÇALHO PRINCIPAL (TELA DE ABERTURA)        */
+/* ============================================= */
+.cabecalho-principal {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #FDFDFD, #EAE0D5); /* Gradiente suave */
+}
+
+.cabecalho-principal h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho-principal p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* ============================================= */
+/* INDICADOR DE ROLAGEM (SETA ANIMADA)           */
+/* ============================================= */
+.indicador-rolagem {
+    font-size: 2rem;
+    color: #8B4513;
+    margin-top: 2rem;
+    display: inline-block;
+    animation: balancar 2s infinite; /* Aplica a animação 'balancar' */
+}
+
+/* Animação de "pular" para a seta */
+@keyframes balancar {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ============================================= */
+/* SEÇÕES DE CONTEÚDO (AS TÉCNICAS)              */
+/* ============================================= */
+.secao-tecnica {
+    padding: 100px 50px;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a seção */
+    border-bottom: 1px solid #EAE0D5;
+    opacity: 0; /* Começa invisível para a animação */
+    transform: translateY(50px); /* Começa um pouco para baixo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Animação de entrada */
+}
+
+/* Classe adicionada via JS para tornar a seção visível */
+.secao-tecnica.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.secao-tecnica h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.secao-tecnica h3 {
+    font-size: 1.8rem;
+    color: #A0522D; /* Tom de marrom mais claro para subtítulos */
+}
+
+/* ============================================= */
+/* RODAPÉ                                        */
+/* ============================================= */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
