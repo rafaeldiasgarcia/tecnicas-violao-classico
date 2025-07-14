@@ -147,6 +147,106 @@ ul li::before {
     color: #777;
 }
 
+/* ESTILOS DO FEEDBACK E MODAL */
+.link-discreto {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-discreto:hover {
+    color: #8B4513;
+}
+
+.modal-fundo {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-fundo.visivel {
+    display: flex;
+}
+
+.modal-conteudo {
+    background-color: #FDFDFD;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: aparecer 0.3s ease-out;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fechar-modal {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    color: #333;
+}
+
+.modal-conteudo h2 {
+    margin-top: 0;
+}
+
+.modal-conteudo form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.modal-conteudo form input,
+.modal-conteudo form select,
+.modal-conteudo form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botao-enviar {
+    background-color: #8B4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.botao-enviar:hover {
+    opacity: 0.9;
+}
+
+
 /* PORTABILIDADE MOBILE (RESPONSIVO) */
 @media (max-width: 768px) {
     .cabecalho-principal h1 {
