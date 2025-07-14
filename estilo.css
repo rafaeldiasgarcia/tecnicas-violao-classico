@@ -147,6 +147,24 @@ ul li::before {
     color: #777;
 }
 
+/* TEXTO DE INSPIRAÇÃO */
+.texto-inspiracao {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.texto-inspiracao a {
+    color: #999;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.texto-inspiracao a:hover {
+    color: #8B4513;
+}
+
 /* ESTILOS DO FEEDBACK E MODAL */
 .link-discreto {
     display: block;
